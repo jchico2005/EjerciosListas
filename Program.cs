@@ -12,18 +12,23 @@ int edad = int.Parse(Console.ReadLine());
 //int edad = 48;
 
 Console.WriteLine("Ingreso tu numero  Pasatiempo");
-int cantidad = int.Parse(Console.ReadLine());
+string cantidad = Console.ReadLine();
+int cantidadParciada = 0;
 
+//int valor = int.TryParse(Console.ReadLine());
+if (int.TryParse(cantidad, out int respuesta))
+{
+    cantidadParciada = respuesta;
+}
 
 List<string> listaPasatiempo = new();
 //listaPasatiempo.Add("Canto");
 //listaPasatiempo.Add("Bailar");
 //listaPasatiempo.Add("Cocinar");
 
-for (int i = 0; i < cantidad; i++)
-
+for (int i = 0; i < cantidadParciada; i++)
 {
-    Console.WriteLine("Ingreso tu Pasatiempo" + i);
+    Console.WriteLine("Ingreso tu Pasatiempo ❤" + i);
 
     listaPasatiempo.Add(Console.ReadLine());
 }
