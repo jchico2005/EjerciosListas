@@ -33,7 +33,6 @@ for (int i = 0; i < cantidadParciada; i++)
     listaPasatiempo.Add(Console.ReadLine());
 }
 
-
 Persona nuevPersona = new();
 nuevPersona.Nombre = nombre;
 nuevPersona.Sexo = sexo;
@@ -48,3 +47,5 @@ foreach (var item in nuevPersona.Pasatiempos)
 {
     Console.WriteLine(item);
 }
+
+
